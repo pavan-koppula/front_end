@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Pract</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</head>
+<body>
+	<h1>jQuery </h1>
+	<p id="hide">jQuery is a JS library(Click on me to Hide)</p>
+	<p id="but">Write less, Use More</p>
+	<button id="i">Hide</button>
+	<h2>Practice jQuery</h2>
+	<p id="db">Place mouse on me to get notificaton</p>
+	<p class="t">Toggle</p>
+	<p class="t">Toggle</p>
+	<button id="b">Click to Hide&Show</button>
+	<script type="text/javascript">
+		$("p").click(function(){
+			$("#hide").hide();
+		});
+		$("button#i").click(function(){
+			$("p#but").hide();
+		});
+		$("p#db").hover(function(){
+			alert("Read a para")
+		});
+		$("button#b").click(function(){
+			$("p.t").toggle();
+		});
+
+	</script>
+
+</body>
+</html>
